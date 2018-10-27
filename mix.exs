@@ -26,7 +26,8 @@ defmodule CountdownBot.MixProject do
       {:jason, "~> 1.1"},
       {:timex, "~> 3.4"},
       {:gettext, "~> 0.16.0"},
-      {:quantum, "~> 2.3"}
+      {:quantum, "~> 2.3"},
+      {:distillery, "~> 2.0"}
     ]
   end
 end
