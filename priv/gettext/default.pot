@@ -1,0 +1,4 @@
+msgid "Less than a day left until %{days_left}!"
+msgid_plural "%{days_left} days left until %{event_name}!"
+msgstr[0] ""
+msgstr[1] ""

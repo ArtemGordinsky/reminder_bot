@@ -1,0 +1,5 @@
+msgid "Less than a day left until %{days_left}!"
+msgid_plural "%{days_left} days left until %{event_name}!"
+msgstr[0] "До %{event_name} остался %{days_left} день!"
+msgstr[1] "До %{event_name} осталось %{days_left} дня!"
+msgstr[2] "До %{event_name} осталось %{days_left} дней!"
