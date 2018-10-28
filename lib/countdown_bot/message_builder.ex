@@ -2,12 +2,11 @@ defmodule CountdownBot.MessageBuilder do
   require CountdownBot.Translation
 
   def generate_message(date_to, timezone, event_name) do
-    num_days_left = Timex.diff(date_to, Timex.now(timezone), :days)
-
-    translate(num_days_left, event_name)
+    case Timex.diff(date_to, Timex.now(timezone), :days) do
+      num_days when num_days < 0 -> {:event_passed, nil}
+      num_days -> {:ok, translate(num_days, event_name)}
+    end
   end
-
-  defp translate(num_days, _) when num_days < 0 do nil end
 
   defp translate(num_days, event_name) do
     Gettext.ngettext(
@@ -19,6 +18,4 @@ defmodule CountdownBot.MessageBuilder do
       days_left: num_days
     )
   end
-
-
 end
