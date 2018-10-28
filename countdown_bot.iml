@@ -17,6 +17,7 @@
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/jason" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/libring" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/linguist" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/logger_file_backend" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/metrics" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/mime" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/mimerl" />
@@ -73,5 +74,6 @@
     <orderEntry type="library" name="gen_state_machine" level="project" />
     <orderEntry type="library" name="distillery" level="project" />
     <orderEntry type="library" name="artificery" level="project" />
+    <orderEntry type="library" name="logger_file_backend" level="project" />
   </component>
 </module>

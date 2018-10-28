@@ -9,6 +9,12 @@ config :countdown_bot,
   event_date: ~D[2018-12-31],
   timezone: "Europe/Amsterdam"
 
+config :logger, level: :info
+config :logger, backends: [:console, {LoggerFileBackend, :app_log}]
+config :logger, :app_log,
+       path: "logs/app.log",
+       level: :info
+
 config :countdown_bot, CountdownBot.Scheduler,
    timezone: "Europe/Amsterdam",
    jobs: [

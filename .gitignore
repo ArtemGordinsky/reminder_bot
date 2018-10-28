@@ -27,3 +27,4 @@ countdown_bot-*.tar
 /config/test.exs
 
 .idea
+/logs/

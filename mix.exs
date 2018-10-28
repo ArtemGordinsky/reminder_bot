@@ -20,12 +20,13 @@ defmodule CountdownBot.MixProject do
 
   defp deps do
     [
-      {:tesla, "~> 1.2.0"},
-      {:jason, "~> 1.1"},
       {:timex, "~> 3.4"},
-      {:gettext, "~> 0.16.0"},
+      {:jason, "~> 1.1"},
+      {:tesla, "~> 1.2.0"},
       {:quantum, "~> 2.3"},
-      {:distillery, "~> 2.0"}
+      {:gettext, "~> 0.16.0"},
+      {:distillery, "~> 2.0"},
+      {:logger_file_backend, "~> 0.0.10"}
     ]
   end
 end
