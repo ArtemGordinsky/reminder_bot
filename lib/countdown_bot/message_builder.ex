@@ -11,7 +11,7 @@ defmodule CountdownBot.MessageBuilder do
   defp translate(num_days, event_name) do
     Gettext.ngettext(
       CountdownBot.Translation,
-      "Less than a day left until %{days_left}!",
+      "Less than a day left until %{event_name}!",
       "%{days_left} days left until %{event_name}!",
       num_days,
       event_name: event_name,
